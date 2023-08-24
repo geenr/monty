@@ -13,7 +13,8 @@
 int executor(char *content, stack_t **stack, unsigned int line_no, FILE *file)
 {
 	instruction_t inst_op[] = {
-		{"nop", my_nop}
+		{"nop", my_nop},
+		{"push", push_monty},
 	}
 	char op_code;
 	unsigned int a = 0;
