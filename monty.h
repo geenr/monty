@@ -58,6 +58,7 @@ void pop_monty(stack_t **head, unsigned int line_no);
 void swap_monty(stack_t **head, unsigned int line_no);
 void pall_monty(stack_t **head, unsigned int line_no);
 void pint_monty(stack_t **head, unsigned int line_no);
+void add_monty(stack_t **head, unsigned int line_no);
 void push_monty(stack_t **head, unsigned int line_no);
 int executor(char *content, stack_t **stack, unsigned int line_no, FILE *file);
 void my_nop(stack_t **head, unsigned int line_no);
