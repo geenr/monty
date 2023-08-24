@@ -37,7 +37,7 @@ int executor(char *content, stack_t **stack, unsigned int line_no, FILE *file)
 		fclose(file);
 		free(content);
 
-		free_stack(*stack);
+		stack_free(*stack);
 		exit(EXIT_FAILURE);
 	}
 	return (1);
