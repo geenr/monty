@@ -27,7 +27,7 @@ int executor(char *content, stack_t **stack, unsigned int line_no, FILE *file)
 
 	op_code = strtok(content, "\n\t");
 	if (op_code && op_code[0] == '#')
-		return;
+		return (0);
 	bus.arg = strtok(NULL, "\n\t");
 	while (inst_op[a].opcode && op_code)
 	{
