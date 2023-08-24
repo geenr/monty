@@ -62,6 +62,7 @@ void add_monty(stack_t **head, unsigned int line_no);
 void addnode(stack_t **head, int n);
 void queue_monty(stack_t **head, unsigned int line_no);
 void addqueue(stack_t **head, int n);
+void stack_free(stack_t *head);
 void push_monty(stack_t **head, unsigned int line_no);
 int executor(char *content, stack_t **stack, unsigned int line_no, FILE *file);
 void my_nop(stack_t **head, unsigned int line_no);

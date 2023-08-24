@@ -33,9 +33,9 @@ int main(int argc, char *argv[])
 		lineRead = getline(&content, &s, file);
 		bus.content = content;
 		line_no++;
-		if (read_line > 0)
+		if (lineRead > 0)
 		{
-			execute(content, &stack, line_no, file);
+			executor(content, &stack, line_no, file);
 		}
 		free(content);
 	}
