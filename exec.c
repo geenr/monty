@@ -16,6 +16,7 @@ int executor(char *content, stack_t **stack, unsigned int line_no, FILE *file)
 		{"nop", my_nop},
 		{"push", push_monty},
 		{"pop", pop_monty},
+		{"swap", swap_monty},
 	}
 	char op_code;
 	unsigned int a = 0;
