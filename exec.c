@@ -21,14 +21,14 @@ int executor(char *content, stack_t **stack, unsigned int line_no, FILE *file)
 		{"pint", pint_monty},
 		{"add", add_monty},
 		{"queue", queue_monty}
-	}
-	char op_code;
+	};
+	char *op_code;
 	unsigned int a = 0;
 
 	op_code = strtok(content, "\n\t");
 	if (op_code && op_code[0] == '#')
 		return;
-	bus.args = strtok(NULL, "\n\t");
+	bus.arg = strtok(NULL, "\n\t");
 	while (inst_op[a].opcode && op_code)
 	{
 		if (strcmp(op_code, inst_op[a].opcode) == 0)
