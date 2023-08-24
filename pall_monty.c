@@ -10,10 +10,10 @@ void pall_monty(stack_t **head, unsigned int line_no)
 	stack_t *h;
 	(void)line_no;
 
+	if (head == NULL)
+		exit(EXIT_FAILURE);
 	h = *head;
-	if (h == NULL)
-		return;
-	while (h)
+	while (h != NULL)
 	{
 		printf("%d\n", h->n);
 		h = h->next;
