@@ -38,7 +38,7 @@ typedef struct instruction_s
         char *opcode;
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
-
+int executor(char *content, stack_t **stack, unsigned int line_no, FILE *file);
 void my_nop(stack_t **head, unsigned int line_no);
 
 #endif
