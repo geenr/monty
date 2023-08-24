@@ -5,7 +5,7 @@
  * @line_no: line_number
  * Return: no return
 */
-void pint_monty(stack_t **head, unsigned in line_no)
+void pint_monty(stack_t **head, unsigned int line_no)
 {
 	if (*head == NULL)
 	{

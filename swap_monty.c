@@ -27,5 +27,5 @@ void swap_monty(stack_t **head, unsigned int line_no)
 	h = *head;
 	tmp = h->n;
 	h->n = h->next->n;
-	h->next->n = aux;
+	h->next->n = tmp;
 }
