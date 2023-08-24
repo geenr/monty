@@ -20,6 +20,7 @@ int executor(char *content, stack_t **stack, unsigned int line_no, FILE *file)
 		{"pall", pall_monty},
 		{"pint", pint_monty},
 		{"add", add_monty},
+		{"queue", queue_monty}
 	}
 	char op_code;
 	unsigned int a = 0;
