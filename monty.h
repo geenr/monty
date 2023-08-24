@@ -54,6 +54,7 @@ typedef struct bus_s
 	int lifi;
 }  bus_t;
 extern bus_t bus;
+void push_monty(stack_t **head, unsigned int line_no);
 int executor(char *content, stack_t **stack, unsigned int line_no, FILE *file);
 void my_nop(stack_t **head, unsigned int line_no);
 
